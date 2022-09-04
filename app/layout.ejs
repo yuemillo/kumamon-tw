@@ -1,66 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+
+    <div class="container d-flex flex-lg-column">
+      <div class="logo">
+        <a class="navbar-brand d-flex" href="index.html">
+          <img src="assets/images/logo.jpg" alt="杰哥logo">
+          <div class="logoText ms-3">
+              <p class="mb-1 fs-6">日本熊本縣產品台灣總代理</p>
+              <h1 class="mb-0">熊本木屋</h1>
+          </div>
+        </a>
+       
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+        <div class="navbar-nav mx-auto mt-2">
+          <a class="nav-link text-center fs-5 px-3" href="#">熊本木屋</a>
+          <a class="nav-link text-center fs-5 px-3" href="#">最新消息</a>
+          <a class="nav-link text-center fs-5 px-3" href="#">產品介紹</a>
+          <a class="nav-link text-center fs-5 px-3" href="viedo.html">媒體介紹</a>
+          <a class="nav-link text-center fs-5 px-3" href="#">聯絡資訊</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <%- contents %>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/slider-1.png" class="d-block w-100" alt="熊本木屋橫幅01">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/slider-2.png" class="d-block w-100" alt="熊本木屋橫幅02">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/slider-3.png" class="d-block w-100" alt="熊本木屋橫幅03">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/slider-4.png" class="d-block w-100" alt="熊本木屋橫幅04">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/slider-5.png" class="d-block w-100" alt="熊本木屋橫幅05">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-    <footer class="footer">
-      footer
+  <%- contents %>
+
+    <footer class="footer bg-primary py-6">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-5 d-flex justify-content-center">
+            <ul class="list-unstyled text-white text-nowrap">
+              <li>
+                <p class="fs-5">熊本縣產品台灣總代理</p>
+              </li>
+              <li>
+                <p class="fs-5">地址: 台中市霧峰區中正路625號</p>
+              </li>
+              <li class="mb-3">
+                <a href="tel:+886-4-24938910" class="fs-5 text-white text-decoration-none">服務電話: 04-24938910</a>
+              </li>
+              <li>
+                <a href="jg24938910@gmail.com" class="fs-5 text-white text-decoration-none">E-mail: jg24938910@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-5 d-flex align-items-center justify-content-center">
+          <a href="https://www.facebook.com/KumamotoChalet" target=_blank><i class="fa-brands fa-facebook text-white display-1 me-4 me-lg-7"></i></a>
+          <a href="https://www.youtube.com/channel/UC3CFvroZdEzlTqbisExIk5w/videos" target=_blank><i class="fa-brands fa-youtube text-white display-1"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  </body>
+</body>
 
 </html>

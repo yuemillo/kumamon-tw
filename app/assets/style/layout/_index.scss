@@ -1,5 +1,32 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.firstCard-body{
+  max-width: 492px;
+}
+
+.block::before{
+  content: "";
+  border-left: 8px solid $primary;
+  padding-left: 4px;
+}
+
+.blockDobble{
+  &::before{
+    content: "";
+    border-left: 8px solid $primary;
+    padding-left: 4px;
+  }
+  &::after{
+    content: "";
+    border-right: 8px solid $primary;
+    padding-right: 4px;
+  }
+
+}
+.productCard{
+  border-radius: 16px;
+  box-shadow: 2px 2px 5px 0 #000;
+  img{
+    border-radius: 16px 16px 0 0;
+    object-fit: cover;
+    max-height: 400px;
+  }
 }
