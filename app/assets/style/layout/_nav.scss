@@ -1,13 +1,31 @@
-.logo a img{
-    max-width: 90px;
+.pic{
+    max-width: 60px;
+    @include sm(){
+        max-width: 100px;
+    }
+    
 }
+
+.navbar-light .navbar-nav .nav-link{
+    &:hover{
+        color: $primary;
+        @include lg(){
+                border-bottom:  3px solid $primary;
+         }
+    }
+ }
+   
+
 .logoText{
     h1{
         letter-spacing: .2em;
         font-family: 'Noto Serif TC', serif;
+      
     }
     p{
+        @include sm(){
         letter-spacing: .15em;
+        }
     }
 }
 

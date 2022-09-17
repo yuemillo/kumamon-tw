@@ -3,15 +3,17 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 //base
-@import './layout/base.scss';
-@import './layout/fontStyle.scss';
+@import './base/base.scss';
+@import './base/fontStyle.scss';
 
+//utils
+@import './utils/mixin.scss';
+@import './utils/animate.scss';
 
 //layout
 @import './layout/nav.scss';
 
-//pages
-@import './layout/index.scss';
 
-//utils
-@import './layout/mixin.scss'
+//pages
+@import './pages/index.scss';
+@import './pages/about.scss';

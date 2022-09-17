@@ -24,9 +24,17 @@
 .productCard{
   border-radius: 16px;
   box-shadow: 2px 2px 5px 0 #000;
+  &:hover{
+    border: 5px solid $primary;
+  }
   img{
     border-radius: 16px 16px 0 0;
     object-fit: cover;
     max-height: 400px;
   }
+}
+
+.cloud-sm{
+  bottom: -110px;
+  right: 90px;
 }
